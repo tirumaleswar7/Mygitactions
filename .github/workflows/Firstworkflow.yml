@@ -11,7 +11,8 @@ jobs:
        uses: actions/checkout@v2
 
      - name: Run super-linter
-       uses: github/super-linter@v3
+       uses: uses: super-linter/super-linter@v6.3.0
+
        env:
          DEFAULT_BRANCH: main
          GITHUB_TOCKEN: $ {{ secrets.GITHUB_TOCKEN }}
